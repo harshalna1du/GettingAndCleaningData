@@ -1,0 +1,12 @@
+1. Wide_Activity_Subject_Grouping_Summary.txt [180 Observations 68 Variables]
+    - Grouping first by Activity, then by Subject
+    - Mean of each MeasurementParameter
+
+2. Wide_Subject_Activity_Grouping_Summary.txt [180 Observations 68 Variables]
+     -Grouping first by Subject, then by Activity
+    - Mean of each MeasurementParameter
+
+3. Output : Tidy_Narrow_Summary.txt [11880 Observations, 4 Variables]
+    - Grouped by first by SubjectId then Activity and then MeasurementParameter 
+    - Mean of each MeasurementParameter Value
+    - Tidy dataset based on the paper : https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAAahUKEwjr2-DdpZjIAhVGlogKHUw0BU4&url=http%3A%2F2Fwww.jstatsoft.org%2Fv59%2Fi10%2Fpaper&usg=AFQjCNFKII3Uv4EjwO-x6tt2F1zLHb_pkw

@@ -1,0 +1,58 @@
+## Codebook for Getting and cleaning Data Project
+#### Author: Harshal Nadu
+
+
+### Source Reference
+- Source Dataset : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+- Source Dataset Description : http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+### Directory/Folder Structure
+
+The program must be setup as per the following folder strucutre 
+
+* C:/Coursera/GettingAndCleaningdata/Course Project/Analysis/Analysis
+    + Dataset: Contains the original dataset. See /Readme.txt for more details
+    + Output : Contains the output of the program wide and narrow tidy data sets
+    + run_analysis.R : Program Code
+    + Codebook - Getting and Cleaning Data - Course Project.Rmd
+    
+### Dataset Description
+
+* There are two broad data groups Training and Test that are  used for training and testng the ML algorithm
+* For the purpose of this analysis these need to  be mergerd
+* Subjects are people who were part of the experiment. 
+* Each activity has a unique label stored in activity_labels.txt. This is the list of Activities
+    + Walking
+    + Walking Upstairs
+    + Walking Downstairs
+    + Sitting
+    + Standing    
+    + Laying    
+* The parameters (or variables) that were measures are listed in Features.txt There are a total of 561 parameters that have been measured./features_info.txt has more details about these parameters.
+
+* The Observations for each of the parameter is stored in XTrain and XTest File
+* The corresponding activity for each measurement is stored in YTrain and YTest file
+* The corresponding subject who performed the activity is stored in the SubjectTrain or SubjectTest file
+* Note: Unlike a unique list of Activities and MeasurementParameters, there's no unique list of subjects.
+* Inertial Signals are not used in this analysis 
+* The number of values for the Subject, activities and observations match, i.e the relevant data is split into 3 type of files. The combined dataset that is an input into the grouping and summary function looks like this
+    + Columns: SubjectID, Activity, One column for each parameter measured
+    + Observations "Id identifying the Subject","Activity Name,Observation"
+    
+### Output Description
+
+* Output : Wide_Activity_Subject_Grouping_Summary.txt [180 Observations 68 Variables]
+    + Grouping first by Activity, then by Subject
+    + Mean of each MeasurementParameter
+* Output : Wide_Subject_Activity_Grouping_Summary.txt [180 Observations 68 Variables]
+    + Grouping first by Subject, then by Activity
+    + Mean of each MeasurementParameter
+* Output : Tidy_Narrow_Summary.txt [11880 Observations, 4 Variables]
+    + Tidy dataset based on the paper : https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAAahUKEwjr2-DdpZjIAhVGlogKHUw0BU4&url=http%3A%2F%2Fwww.jstatsoft.org%2Fv59%2Fi10%2Fpaper&usg=AFQjCNFKII3Uv4EjwO-x6tt2F1zLHb_pkw
+    + Grouped by first by SubjectId then Activity and then MeasurementParameter 
+    + Mean of each MeasurementParameter Value
+
+
+
+
