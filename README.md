@@ -2,7 +2,7 @@
 #### Program Description 
 ##### Pre-Requisites
 The original folder structure and dataset to be set up in the structire described in the codebook ".
-data.table, dplyr adn tidyr packages are installed.
+data.table, dplyr and tidyr packages are installed.
 
 
 ##### Dataset Description
@@ -24,7 +24,7 @@ data.table, dplyr adn tidyr packages are installed.
 2. Load the Activity Label from activity_Lables.txt
 3. Load the MEasurement Parameters from Features.txt
 4. Load Test and Training data using read.tables.
-5. Assignment Question 1 - "Merge the training and the test sets to create one data set". Merge the training and the test data using the rbind 
+5. Assignment Question 1 - "Merge the training and the test sets to create one data set". The program merges the training and the test data using the rbind 
 6. Assignment Question 2 - "Extract only the measurements on the mean and standard deviation for each measurement": Use regular expression to extract teh index of columns with standard deviation and mean. Discard other columns
 7. Assignment Question 3 -"Use descriptive activity names to name the activities in the data set": Set descriptive activity names
 8. Combine the Subject-Activity-Observation Datasets
