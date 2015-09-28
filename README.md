@@ -5,7 +5,7 @@ The original folder structure and dataset to be set up in the structire describe
 data.table, dplyr adn tidyr packages are installed.
 
 
- Dataset Description
+##### Dataset Description
 - There are two broad data groups Training and Test that are presumably used for training and testng the ML algorithm
 - For the purpose of this analysis these need to  be mergerd
 - Subjects are people who were part of the experiment. 
@@ -19,7 +19,7 @@ data.table, dplyr adn tidyr packages are installed.
 - Inertial Signals are not used in this analysis 
 
 
-Program Logic
+##### Program Logic
 1. Load the packages using Library command
 2. Load the Activity Label from activity_Lables.txt
 3. Load the MEasurement Parameters from Features.txt
